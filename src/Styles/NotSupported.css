@@ -1,0 +1,38 @@
+.not-supported {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: #1db954;
+}
+
+.not-supported .message {
+  text-align: center;
+}
+
+.not-supported img {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.not-supported h1 {
+  color: #fff;
+}
+
+.not-supported button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: 3px #111 solid;
+  color: #111;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 50px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.not-supported button:hover {
+  color: #fff;
+  border-color: #fff;
+}

@@ -1,0 +1,187 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 60px;
+  padding: 10px;
+  background-color: rgba(5, 5, 5, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 999;
+  color: #fff;
+}
+
+.sidebar.expand {
+  width: 300px;
+}
+
+.sidebar img {
+  height: auto;
+  object-fit: cover;
+}
+
+.sidebar.expand img.sidebar-big-logo {
+  height: 40px;
+}
+
+.sidebar img.sidebar-circle-logo {
+  width: 35px;
+}
+
+.sidebar .sidebar-options {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-top: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+}
+
+.icon-box {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  line-height: 0;
+}
+
+.sidebar .sidebar-option,
+.fav-list,
+.fav-list a,
+.create-playlist,
+.playlist-item {
+  display: flex;
+  cursor: pointer;
+  color: #fff;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: none;
+}
+
+.fav-list a,
+.expand .fav-list a {
+  margin-bottom: 0;
+}
+
+.sidebar .active {
+  background-color: #ccc !important;
+  border-radius: 4px;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+.icon-box {
+  height: 30px;
+  width: 30px;
+}
+
+.sidebar .active .sidebar-option {
+  color: #121212;
+}
+
+.sidebar.expand .active {
+  width: 100%;
+  height: 30px;
+}
+.sidebar.expand .active .sidebar-option {
+  background-color: #ccc !important;
+  color: #121212;
+  padding: 5px;
+  height: auto;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.sidebar .sidebar-option p,
+.sidebar .create-playlist p,
+.sidebar .fav-list p,
+.sidebar .playlist-item p {
+  display: none;
+}
+
+.sidebar.expand .sidebar-options {
+  align-items: flex-start;
+}
+
+.sidebar.expand .sidebar-option p,
+.sidebar.expand .create-playlist p,
+.sidebar.expand .fav-list p,
+.sidebar.expand .playlist-item p {
+  display: block;
+  margin-left: 10px;
+}
+
+.personal-lists {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.sidebar.expand .personal-lists,
+.sidebar.expand .sidebar-playlist {
+  align-items: flex-start;
+}
+
+.create-playlist-icon {
+  background-color: #fff;
+  color: #121212;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.fav-list {
+  margin-bottom: 0 !important;
+}
+
+.fav-list-icon {
+  background-color: #6200ff;
+  color: #fff;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.sidebar-playlist {
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 0.5);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-height: calc(100vh - 410px);
+  height: 100%;
+  border: 1px #222 solid;
+  overflow-y: scroll;
+}
+
+.playlist-item {
+  margin-bottom: 5px !important;
+}
+
+.sidebar .playlist-poster {
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.expand-btn {
+  border: 1px #fff solid;
+  display: grid;
+  border-radius: 50%;
+  place-items: center;
+  height: 40px;
+  width: 40px;
+  transform: rotate(0deg);
+  cursor: pointer;
+  margin-left: 0;
+}
+.sidebar.expand .expand-btn {
+  margin-left: auto;
+  transform: rotate(180deg);
+}
